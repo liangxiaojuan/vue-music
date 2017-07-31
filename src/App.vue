@@ -2,7 +2,9 @@
   <div id="app">
     <Mheader></Mheader>
     <tab></tab>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -17,6 +19,5 @@ export default {
 </script>
 
 <style>
-#app {
-}
+#app {}
 </style>
